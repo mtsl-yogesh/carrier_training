@@ -702,5 +702,474 @@ console.log(dateSample.getTime())
                 1616630400000
 */
 
+/*
+         JavaScript Math Object :  
+                The JavaScript Math object allows you to perform mathematical tasks on numbers.
 
+        Math Properties : 
+                Math.E ->        returns Euler's number
+                Math.PI ->       returns PI
+                Math.SQRT2 ->    returns the square root of 2
+                Math.SQRT1_2 ->  returns the square root of 1/2
+                Math.LN2  ->     returns the natural logarithm of 2
+                Math.LN10  ->    returns the natural logarithm of 10
+                Math.LOG2E  ->   returns base 2 logarithm of E
+                Math.LOG10E ->   returns base 10 logarithm of E
 
+        Math Methods : 
+                abs(x)	           ->           Returns the absolute value of x
+                acos(x)	           ->           Returns the arccosine of x, in radians
+                acosh(x)           ->	        Returns the hyperbolic arccosine of x
+                asin(x)	           ->           Returns the arcsine of x, in radians
+                asinh(x)           -> 	        Returns the hyperbolic arcsine of x
+                atan(x)	           ->           Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+
+                atan2(y, x)        -> 	        Returns the arctangent of the quotient of its arguments
+
+                atanh(x)           -> 	        Returns the hyperbolic arctangent of x
+                cbrt(x)	           ->           Returns the cubic root of x
+                ceil(x)	           ->           Returns x, rounded upwards to the nearest integer
+
+                cos(x)	           ->            Returns the cosine of x (x is in radians)
+
+                cosh(x)	           ->            Returns the hyperbolic cosine of x
+                exp(x)	           ->            Returns the value of Ex
+                floor(x)           ->	         Returns x, rounded downwards to the nearest integer
+                log(x)             -> 	         Returns the natural logarithm (base E) of x
+                max(x, y, z, ..., n) ->          Returns the number with the highest value
+
+                min(x, y, z, ..., n) ->          Returns the number with the lowest value
+                pow(x, y)          -> 	         Returns the value of x to the power of y
+                random()           ->	         Returns a random number between 0 and 1
+                round(x)           ->	         Rounds x to the nearest integer
+                sign(x)	           ->            Returns if x is negative, null or positive (-1, 0, 1)
+                sin(x)	           ->            Returns the sine of x (x is in radians)
+                sinh(x)	           ->            Returns the hyperbolic sine of x
+                sqrt(x)	           ->            Returns the square root of x
+                tan(x)	           ->            Returns the tangent of an angle
+                tanh(x)	           ->            Returns the hyperbolic tangent of a number
+                trunc(x)           ->	         Returns the integer part of a number (x)
+*/
+
+console.log(Math.abs(-25346.4634))
+console.log(Math.ceil(25346.4634))
+console.log(Math.floor(25346.4634))
+console.log(Math.random())
+console.log(Math.max(4534,3252345,25,3))
+console.log(Math.min(4534,3252345,25,3))
+console.log(Math.round(534.544342234545))
+console.log(Math.trunc(34.456345))
+/*
+        Output : 
+                25346.4634
+                25347
+                25346
+                0.07706930354190922
+                3252345
+                3
+                535
+                34
+*/
+
+/*
+        JavaScript Booleans  : 
+                A JavaScript Boolean represents one of two values: true or false.
+
+                You can use the Boolean() function to find out if an expression (or a variable) is true.
+        Key Points : 
+                1. The Boolean value of 0 (zero) is false.
+                2. The Boolean value of -0 (minus zero) is false.
+                3. The Boolean value of "" (empty string) is false
+                4. The Boolean value of undefined is false
+                5. The Boolean value of null is false
+                6. The Boolean value of false is (you guessed it) false
+                7. The Boolean value of NaN is false
+*/
+console.log(Boolean(34<45))
+//Output -> true
+
+/*
+        Javascript comparison operator : 
+                2 < 12	        true	
+                2 < "12"	true	
+                2 < "John"	false	
+                2 > "John"	false	
+                2 == "John"	false	
+                "2" < "12"	false	
+                "2" > "12"	true	
+                "2" == "12"	false
+
+                The Nullish Coalescing Operator : 
+                        The ?? operator returns the first argument if it is not nullish (null or undefined).
+                The Optional Chaining Operator : 
+                        The ?. operator returns undefined if an object is undefined or null
+*/
+const dataObject = {nameOfPerson:"Yogesh",age:22,school:null||"KV"}
+console.log(dataObject?.school)
+//Output -> KV
+
+const school = "KV"
+const mySchool = null;
+const finalData = school ?? mySchool
+console.log(finalData)
+//Output -> KV
+
+/*
+        JavaScript Conditionals : 
+                Conditional statements are used to perform different actions based on different conditions.
+
+                Key Points : 
+                        1. Use if to specify a block of code to be executed, if a specified condition is true
+
+                        2. Use else to specify a block of code to be executed, if the same condition is false
+
+                        3. Use else if to specify a new condition to test, if the first condition is false
+
+                        4. Use switch to specify many alternative blocks of code to be executed
+*/
+
+if(new Date().getHours() < 12){
+        console.log("Good Morning !!!")
+}
+if(new Date().getHours() < 12){
+        console.log("Good Morning !!!")
+}else{
+        console.log("Good Evening !!!")
+}
+if(new Date().getHours() < 12){
+        console.log("Good Morning !!!")
+}else if(new Date().getHours() < 16){
+        console.log("Good Afternoon !!!")
+}else{
+        console.log("Good Evening !!!")
+}
+/*
+        At Morning : 
+                Good Morning !!!
+                Good Morning !!!
+                Good Morning !!!
+        At Afternoon: 
+                Good Afternoon !!!
+        At Evening: 
+                Good Evening !!!
+*/
+
+switch (new Date().getDay()) {
+        case 0:
+          day = "Sunday";
+          console.log(day);
+          break;
+        case 1:
+          day = "Monday";
+          console.log(day);
+          break;
+        case 2:
+           day = "Tuesday";
+           console.log(day);
+          break;
+        case 3:
+          day = "Wednesday";
+          console.log(day);
+          break;
+        case 4:
+          day = "Thursday";
+          console.log(day);
+          break;
+        case 5:
+          day = "Friday";
+          console.log(day);
+          break;
+        case 6:
+          day = "Saturday";
+          console.log(day);
+}
+//Output -> Thursday
+
+/*
+        JavaScript Loops : 
+                Loops can execute a block of code a number of times.
+
+                Types of Loop : 
+                        for ->    loops through a block of code a number of times
+                        for/in -> loops through the properties of an object
+                        for/of -> loops through the values of an iterable object
+                        while ->  loops through a block of code while a specified condition is true
+
+                        do/while -> also loops through a block of code while a specified condition is true
+*/
+
+for (let i = 1; i <= 10; i++) {
+      console.log(`2 * ${i} = ${i*2}`)  
+}
+/*
+        Output : 
+                2 * 1 = 2
+                2 * 2 = 4
+                2 * 3 = 6
+                2 * 4 = 8
+                2 * 5 = 10
+                2 * 6 = 12
+                2 * 7 = 14
+                2 * 8 = 16
+                2 * 9 = 18
+                2 * 10 = 20
+*/
+
+const numbers = [45, 4, 9, 16, 25];
+for (const key in numbers) {
+       console.log(numbers[key])
+}
+/*
+        Output :
+                45
+                4
+                9
+                16
+                25 
+*/
+/*
+        ! Do not use for in over an Array if the index order is important.
+        
+        !The index order is implementation-dependent, and array values may not be accessed in the order you expect.
+
+        !It is better to use a for loop, a for of loop, or Array.forEach() when the order is important.
+
+*/
+
+numbers.forEach(myFunction);
+
+function myFunction(value) {
+  console.log(value)
+}
+/*
+        Output: 
+                45
+                4
+                9
+                16
+                25
+*/
+
+for (const key of numbers) {
+        console.log(key)
+}
+/*
+        Output: 
+                45
+                4
+                9
+                16
+                25
+*/
+var i=0;
+while (i!=numbers.length) {
+      console.log(`2 * ${numbers[i]} = ${numbers[i] * 2}`) ;
+      i++;
+}
+/*
+        Output : 
+                2 * 45 = 90
+                2 * 4 = 8
+                2 * 9 = 18
+                2 * 16 = 32
+                2 * 25 = 50
+*/
+
+/*
+        JavaScript Break and Continue : 
+                The break statement "jumps out" of a loop.
+
+                The continue statement "jumps over" one iteration in the loop.
+*/
+
+for (const key of numbers) {
+      if(key<=10) break;
+      console.log(key)  
+}
+// Output : 45
+
+for (const key of numbers) {
+        if(key<=10) continue;
+        console.log(key)  
+}
+/* 
+        Output : 
+                45
+                16
+                25
+*/
+
+/*
+        JavaScript Iterables : 
+                JavaScript Iterables are iterable objects (like Arrays). They can be accessed with simple and efficient code.
+
+                Iterables can be iterated over with for..of loops
+*/
+
+//Iterating Over a String
+
+for (const x of name) {
+  console.log(x)
+}
+/*
+        Output : 
+                Y
+                o
+                g
+                e
+                s
+                h
+*/
+
+//Iterating Over an Array
+for (const key of numbers) {
+        console.log(`3 * ${key} = ${key * i}`)  
+}
+
+/*
+        Output : 
+                3 * 45 = 225
+                3 * 4 = 20
+                3 * 9 = 45
+                3 * 16 = 80
+                3 * 25 = 125
+*/
+
+//Iterating Over a Set
+
+const letters = new Set(["a","b","c"]);
+
+for (const iterator of letters) {
+        console.log(iterator)
+}
+/*
+        Output : 
+                a
+                b
+                c
+*/
+
+// Iterating Over a Map
+const vegetables = new Map([
+        ["Potato",30],
+        ["Tomato",40],
+        ["Onion",60]
+])
+for (const iterator of vegetables) {
+        console.log(`Price of ${iterator[0]} is : ${iterator[1]}`)
+}
+/*
+        Output : 
+                Price of Potato is : 30
+                Price of Tomato is : 40
+                Price of Onion is : 60
+*/
+
+/*
+        JavaScript Sets : 
+                A JavaScript Set is a collection of unique values. Each value can only occur once in a Set.
+
+                You can create a JavaScript Set by:
+                        1. Passing an Array to new Set()
+                        2. Create a new Set and use add() to add values
+                        3. Create a new Set and use add() to add variables
+*/
+
+const employees = new Set(["Abhishek","Kishan","Yogesh"])
+console.log(employees)
+//Output -> Set(3) { 'Abhishek', 'Kishan', 'Yogesh' }
+
+//Adding new Employee
+employees.add("Ramesh")
+console.log(employees)
+//Output -> Set(4) { 'Abhishek', 'Kishan', 'Yogesh', 'Ramesh' }
+
+//Vales Iterator 
+for (const val of employees.values()) {
+        console.log(val)
+}
+/*
+        Output : 
+                Abhishek
+                Kishan
+                Yogesh
+                Ramesh
+*/
+
+/*
+        JavaScript typeof : 
+                In JavaScript there are 5 different data types that can contain values:
+                        string
+                        number
+                        boolean
+                        object
+                        function
+                There are 6 types of objects:
+                        Object
+                        Date
+                        Array
+                        String
+                        Number
+                        Boolean
+                And 2 data types that cannot contain values:
+                        null
+                        undefined
+*/
+
+console.log(typeof "John")                 
+console.log(typeof 3.14)                   
+console.log(typeof NaN)                    
+console.log(typeof false)               
+console.log(typeof [1,2,3,4])              
+console.log(typeof {name:'John', age:34})  
+console.log(typeof new Date())             
+console.log(typeof function () {})       
+console.log(typeof myCar)        
+console.log(typeof null)                   
+/*
+        output : 
+                string
+                number
+                number
+                boolean
+                object
+                object
+                object
+                function
+                undefined
+                object
+*/
+
+/*
+        JavaScript Regular Expressions  :  
+                A regular expression is a sequence of characters that forms a search pattern.
+
+                The search pattern can be used for text search and text replace operations.
+                
+                Rules of Regex :  
+                        [abc]	Find any of the characters between the brackets	
+                        [0-9]	Find any of the digits between the brackets	
+                        (x|y)	Find any of the alternatives separated with |
+                        \d	Find a digit	
+                        \s	Find a whitespace character	
+                        \b	Find a match at the beginning of a word like this: \bWORD, or at the end of a word like this: WORD\b	
+
+                        \uxxxx	Find the Unicode character specified by the hexadecimal number xxxx
+
+                        n+	Matches any string that contains at least one n
+                        n*	Matches any string that contains zero or more occurrences of n
+                        n?	Matches any string that contains zero or one occurrences of n
+
+                !The test() method is a RegExp expression method.It searches a string for a pattern, and returns true or false, depending on the result.
+
+                !The exec() method is a RegExp expression method. It searches a string for a specified pattern, and returns the found text as an object.
+
+*/
+
+const personToNamed = "Yogesh Gaur"
+console.log(personToNamed.search(/Gaur/i)) 
+//Output -> 7
+
+const pattern = /e/;
+console.log(pattern.test("The best things in life are free!"))
+//Output -> true
