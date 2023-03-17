@@ -590,7 +590,7 @@ console.log(fruits.reverse())
 */
 
 const numbersArray = [4, 9, 16, 25, 29]
-const values = numbersArray.forEach((val)=>{
+const values = numbersArray.forEach((val) => {
         console.log(val)
 })
 console.log(values)
@@ -604,7 +604,7 @@ console.log(values)
                 undefined
 */
 
-console.log(numbersArray.map((val)=>{
+console.log(numbersArray.map((val) => {
         console.log(val);
 }))
 /*
@@ -626,7 +626,7 @@ console.log(over10)
 
 
 function myFunction(total, value) {
-  return total + value;
+        return total + value;
 }
 let sum = numbersArray.reduce(myFunction);
 console.log(sum)
@@ -656,7 +656,7 @@ console.log(over8)
                 new Date() creates a date object with the current date and time
 */
 
-const date =  new Date()
+const date = new Date()
 console.log(date)
 //Output -> 2023-03-15T09:55:09.415Z
 
@@ -755,8 +755,8 @@ console.log(Math.abs(-25346.4634))
 console.log(Math.ceil(25346.4634))
 console.log(Math.floor(25346.4634))
 console.log(Math.random())
-console.log(Math.max(4534,3252345,25,3))
-console.log(Math.min(4534,3252345,25,3))
+console.log(Math.max(4534, 3252345, 25, 3))
+console.log(Math.min(4534, 3252345, 25, 3))
 console.log(Math.round(534.544342234545))
 console.log(Math.trunc(34.456345))
 /*
@@ -785,7 +785,7 @@ console.log(Math.trunc(34.456345))
                 6. The Boolean value of false is (you guessed it) false
                 7. The Boolean value of NaN is false
 */
-console.log(Boolean(34<45))
+console.log(Boolean(34 < 45))
 //Output -> true
 
 /*
@@ -804,7 +804,7 @@ console.log(Boolean(34<45))
                 The Optional Chaining Operator : 
                         The ?. operator returns undefined if an object is undefined or null
 */
-const dataObject = {nameOfPerson:"Yogesh",age:22,school:null||"KV"}
+const dataObject = { nameOfPerson: "Yogesh", age: 22, school: null || "KV" }
 console.log(dataObject?.school)
 //Output -> KV
 
@@ -828,19 +828,19 @@ console.log(finalData)
                         4. Use switch to specify many alternative blocks of code to be executed
 */
 
-if(new Date().getHours() < 12){
+if (new Date().getHours() < 12) {
         console.log("Good Morning !!!")
 }
-if(new Date().getHours() < 12){
+if (new Date().getHours() < 12) {
         console.log("Good Morning !!!")
-}else{
+} else {
         console.log("Good Evening !!!")
 }
-if(new Date().getHours() < 12){
+if (new Date().getHours() < 12) {
         console.log("Good Morning !!!")
-}else if(new Date().getHours() < 16){
+} else if (new Date().getHours() < 16) {
         console.log("Good Afternoon !!!")
-}else{
+} else {
         console.log("Good Evening !!!")
 }
 /*
@@ -856,32 +856,32 @@ if(new Date().getHours() < 12){
 
 switch (new Date().getDay()) {
         case 0:
-          day = "Sunday";
-          console.log(day);
-          break;
+                day = "Sunday";
+                console.log(day);
+                break;
         case 1:
-          day = "Monday";
-          console.log(day);
-          break;
+                day = "Monday";
+                console.log(day);
+                break;
         case 2:
-           day = "Tuesday";
-           console.log(day);
-          break;
+                day = "Tuesday";
+                console.log(day);
+                break;
         case 3:
-          day = "Wednesday";
-          console.log(day);
-          break;
+                day = "Wednesday";
+                console.log(day);
+                break;
         case 4:
-          day = "Thursday";
-          console.log(day);
-          break;
+                day = "Thursday";
+                console.log(day);
+                break;
         case 5:
-          day = "Friday";
-          console.log(day);
-          break;
+                day = "Friday";
+                console.log(day);
+                break;
         case 6:
-          day = "Saturday";
-          console.log(day);
+                day = "Saturday";
+                console.log(day);
 }
 //Output -> Thursday
 
@@ -899,7 +899,7 @@ switch (new Date().getDay()) {
 */
 
 for (let i = 1; i <= 10; i++) {
-      console.log(`2 * ${i} = ${i*2}`)  
+        console.log(`2 * ${i} = ${i * 2}`)
 }
 /*
         Output : 
@@ -917,7 +917,7 @@ for (let i = 1; i <= 10; i++) {
 
 const numbers = [45, 4, 9, 16, 25];
 for (const key in numbers) {
-       console.log(numbers[key])
+        console.log(numbers[key])
 }
 /*
         Output :
@@ -939,7 +939,7 @@ for (const key in numbers) {
 numbers.forEach(myFunction);
 
 function myFunction(value) {
-  console.log(value)
+        console.log(value)
 }
 /*
         Output: 
@@ -961,10 +961,10 @@ for (const key of numbers) {
                 16
                 25
 */
-var i=0;
-while (i!=numbers.length) {
-      console.log(`2 * ${numbers[i]} = ${numbers[i] * 2}`) ;
-      i++;
+var i = 0;
+while (i != numbers.length) {
+        console.log(`2 * ${numbers[i]} = ${numbers[i] * 2}`);
+        i++;
 }
 /*
         Output : 
@@ -983,14 +983,14 @@ while (i!=numbers.length) {
 */
 
 for (const key of numbers) {
-      if(key<=10) break;
-      console.log(key)  
+        if (key <= 10) break;
+        console.log(key)
 }
 // Output : 45
 
 for (const key of numbers) {
-        if(key<=10) continue;
-        console.log(key)  
+        if (key <= 10) continue;
+        console.log(key)
 }
 /* 
         Output : 
@@ -1009,7 +1009,7 @@ for (const key of numbers) {
 //Iterating Over a String
 
 for (const x of name) {
-  console.log(x)
+        console.log(x)
 }
 /*
         Output : 
@@ -1023,7 +1023,7 @@ for (const x of name) {
 
 //Iterating Over an Array
 for (const key of numbers) {
-        console.log(`3 * ${key} = ${key * i}`)  
+        console.log(`3 * ${key} = ${key * i}`)
 }
 
 /*
@@ -1037,7 +1037,7 @@ for (const key of numbers) {
 
 //Iterating Over a Set
 
-const letters = new Set(["a","b","c"]);
+const letters = new Set(["a", "b", "c"]);
 
 for (const iterator of letters) {
         console.log(iterator)
@@ -1051,9 +1051,9 @@ for (const iterator of letters) {
 
 // Iterating Over a Map
 const vegetables = new Map([
-        ["Potato",30],
-        ["Tomato",40],
-        ["Onion",60]
+        ["Potato", 30],
+        ["Tomato", 40],
+        ["Onion", 60]
 ])
 for (const iterator of vegetables) {
         console.log(`Price of ${iterator[0]} is : ${iterator[1]}`)
@@ -1075,7 +1075,7 @@ for (const iterator of vegetables) {
                         3. Create a new Set and use add() to add variables
 */
 
-const employees = new Set(["Abhishek","Kishan","Yogesh"])
+const employees = new Set(["Abhishek", "Kishan", "Yogesh"])
 console.log(employees)
 //Output -> Set(3) { 'Abhishek', 'Kishan', 'Yogesh' }
 
@@ -1116,16 +1116,16 @@ for (const val of employees.values()) {
                         undefined
 */
 
-console.log(typeof "John")                 
-console.log(typeof 3.14)                   
-console.log(typeof NaN)                    
-console.log(typeof false)               
-console.log(typeof [1,2,3,4])              
-console.log(typeof {name:'John', age:34})  
-console.log(typeof new Date())             
-console.log(typeof function () {})       
-console.log(typeof myCar)        
-console.log(typeof null)                   
+console.log(typeof "John")
+console.log(typeof 3.14)
+console.log(typeof NaN)
+console.log(typeof false)
+console.log(typeof [1, 2, 3, 4])
+console.log(typeof { name: 'John', age: 34 })
+console.log(typeof new Date())
+console.log(typeof function () { })
+console.log(typeof myCar)
+console.log(typeof null)
 /*
         output : 
                 string
@@ -1167,9 +1167,223 @@ console.log(typeof null)
 */
 
 const personToNamed = "Yogesh Gaur"
-console.log(personToNamed.search(/Gaur/i)) 
+console.log(personToNamed.search(/Gaur/i))
 //Output -> 7
 
 const pattern = /e/;
 console.log(pattern.test("The best things in life are free!"))
 //Output -> true
+
+/*
+        Throw, and Try...Catch...Finally : 
+                The try statement defines a code block to run (to try).
+
+                The catch statement defines a code block to handle any error.
+
+                The finally statement defines a code block to run regardless of the result.
+
+                The throw statement defines a custom error.
+
+                Types od Error :  
+
+                        1. Reference Error : 
+                                A ReferenceError is thrown if you use (reference) a variable that has not been declared.
+
+                        2. Syntax Error : 
+                                A SyntaxError is thrown if you try to evaluate code with a syntax error.
+
+                        3. Type Error : 
+                                A TypeError is thrown if you use a value that is outside the range of expected types.
+
+                        4. URI (Uniform Resource Identifier) Error : 
+                                A URIError is thrown if you use illegal characters in a URI function.
+                        5. Range Error : 
+                                A RangeError is thrown if you use a number that is outside the range of legal values.
+                        6. Eval Error : 
+                                An EvalError indicates an error in the eval() function.
+*/
+
+try {
+        //   Block of code to try
+}
+catch (err) {
+        //   Block of code to handle errors
+}
+
+// throw new Error("Hello !!!") 
+
+/* 
+        Output : 
+                d:\Company\carrier\HCJ\js\basics.js:1195
+                throw new Error("Hello !!!")
+                ^
+
+                Error: Hello !!!
+                at Object.<anonymous> (d:\Company\carrier\HCJ\js\basics.js:1195:7)
+                at Module._compile (node:internal/modules/cjs/loader:1159:14)
+                at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+                at Module.load (node:internal/modules/cjs/loader:1037:32)
+                at Module._load (node:internal/modules/cjs/loader:878:12)
+                at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+                at node:internal/main/run_main_module:23:47
+
+                Node.js v18.12.1
+*/
+
+try {
+        // Block of code to try
+}
+catch (err) {
+        // Block of code to handle errors
+}
+finally {
+        // Block of code to be executed regardless of the try / catch result
+}
+
+/*
+        JavaScript Scope :  
+                Scope determines the accessibility (visibility) of variables.
+
+                JavaScript has 3 types of scope:
+                        Block scope -> can be accessed within a { }
+                        Function scope -> can be accessed within a function
+                        Global scope -> can be accessed from anywhere
+*/
+
+{
+        let a = 2; //Block Scope
+}
+
+// ES6 introduced two important new JavaScript keywords: let and const.
+
+function fun() {
+        let b = 34; //Functional Scope
+}
+
+let globalVar = 10; //Global Scope
+
+//Variables declared with var, let and const are quite similar when declared outside a block.
+
+/*
+        JavaScript Hoisting : 
+                Hoisting is JavaScript's default behavior of moving declarations to the top.
+
+                !Variables defined with let and const are hoisted to the top of the block, but not initialized.
+
+                !Meaning: The block of code is aware of the variable, but it cannot be used until it has been declared.
+
+                !Using a let variable before it is declared will result in a ReferenceError.
+*/
+
+carNames = "Volvo";
+// let carName; -> Reference Error 
+var carNames; //-> hoisting 
+
+/*
+        JavaScript Use Strict : 
+                "use strict"; Defines that JavaScript code should be executed in "strict mode".
+
+*/
+
+"use strict";
+q = 3.14;       // This will cause an error because q is not declared
+
+/*
+        The JavaScript this Keyword :  
+                In an object method, this refers to the object.
+                -> Alone, this refers to the global object.
+                -> In a function, this refers to the global object.
+                -> In a function, in strict mode, this is undefined.
+                -> In an event, this refers to the element that received the event.
+                -> Methods like call(), apply(), and bind() can refer this to any object.
+*/
+
+const People1 = {
+        myFunction: function () {
+                console.log(`Name : ${this.firstName} ${this.lastName} \nEmpId: ${this.id}`);
+        }
+}
+
+const People2 = {
+        firstName: "Yogesh",
+        lastName: "Gaur",
+        id: 5566,
+}
+
+People1.myFunction.call(People2)
+
+/*
+        JavaScript Arrow Function : 
+                Arrow functions were introduced in ES6.
+
+                Arrow functions allow us to write shorter function syntax.
+*/
+
+//Simple Function
+hello = function() {
+        return "Hello World!";
+}
+
+//Arrow Function
+hello = ()=>{
+        return "Hello World!"; 
+}
+
+/*
+        JavaScript Classes :  
+                JavaScript Classes are templates for JavaScript Objects.
+                Use the keyword class to create a class.
+                Always add a method named constructor().
+*/
+
+class Company{
+        constructor(empName,empId){
+                this.empName = empName,
+                this.empId = empId
+        }
+
+        printDetail(){
+                console.log(`The name of employee is : ${this.empName} and employee id is : ${this.empId}`)
+        }
+}
+
+const company = new Company("Yogesh Gaur",1234);
+company.printDetail();
+//Output -> The name of employee is : Yogesh Gaur and employee id is : 1234
+
+/*
+        JavaScript Modules : 
+                JavaScript modules allow you to break up your code into separate files.
+
+                This makes it easier to maintain a code-base.
+
+                Modules are imported from external files with the import statement.
+
+                Modules also rely on type="module" in the <script> tag.
+*/
+
+<script type="module">
+import message from "./message.js";
+</script>
+
+/*
+        JavaScript JSON : 
+                JSON is a format for storing and transporting data.
+
+                JSON is often used when data is sent from a server to a web page.
+
+        What is JSON?
+                !JSON stands for JavaScript Object Notation
+                !JSON is a lightweight data interchange format
+                !JSON is language independent *
+                !JSON is "self-describing" and easy to understand
+*/
+
+// JSON Example
+{
+        "employees"=[
+          {"firstName":"John", "lastName":"Doe"},
+          {"firstName":"Anna", "lastName":"Smith"},
+          {"firstName":"Peter", "lastName":"Jones"}
+        ]
+}
