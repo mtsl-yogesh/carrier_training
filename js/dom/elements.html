@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<div id="main">
+<p>Finding HTML Elements by Tag Name</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+</div>
+
+<p id="demo"></p>
+<p class="wow"></p>
+<script>
+const x = document.getElementById("main");
+const y = x.getElementsByTagName("p");
+
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+document.getElementsByClassName("wow")[0].innerHTML = "Yogesh Gaur !!!"
+</script>
+
+</body>
+</html>
+<!-- 
+Finding HTML Elements : 
+    Often, with JavaScript, you want to manipulate HTML elements.
+    To do so, you have to find the elements first. There are several ways to do this :
+        Finding HTML elements by id
+        Finding HTML elements by tag name
+        Finding HTML elements by class name
+        Finding HTML elements by CSS selectors
+        Finding HTML elements by HTML object collections -->
+
+
