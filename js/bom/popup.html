@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="promptVal"></h1>
+    <script>
+        setTimeout(() => {
+            alert("Hello !!!") //Output -> Alert Hello 
+        }, 1000);
+        setTimeout(() => {
+            const val = confirm("Can we proceed ? ") //Output -> Confirm to proceed 
+            if (val) {
+                const promptVal = prompt("What is Your Name ? ")
+                document.getElementById("promptVal").innerText = promptVal; //Output  -> Print the input value in h1 tag
+            }
+        }, 2000);
+    </script>
+</body>
+
+</html>
+<!-- 
+JavaScript Popup Boxes : 
+    Alert Box : 
+        An alert box is often used if you want to make sure information comes through to the user.
+
+        When an alert box pops up, the user will have to click "OK" to proceed.
+    Confirm Box
+        A confirm box is often used if you want the user to verify or accept something.
+
+        When a confirm box pops up, the user will have to click either "OK" or "Cancel" to proceed.
+        
+        If the user clicks "OK", the box returns true. If the user clicks "Cancel", the box returns false.
+    Prompt Box
+        A prompt box is often used if you want the user to input a value before entering a page.
+        
+        When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.
+        
+        If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null. -->

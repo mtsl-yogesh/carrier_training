@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const data = setTimeout(() => {
+            console.log("hi"); //Print Hi
+        }, 1000);
+        clearTimeout(data); //Clear Console
+    </script>
+</body>
+
+</html>
+<!-- 
+JavaScript Timing Events : 
+    Timing Events : 
+        The window object allows execution of code at specified time intervals.
+
+        These time intervals are called timing events.
+
+        The two key methods to use with JavaScript are:
+
+            setTimeout(function, milliseconds)
+                Executes a function, after waiting a specified number of milliseconds.
+
+            setInterval(function, milliseconds)
+                Same as setTimeout(), but repeats the execution of the function continuously.
+
+    How to Stop the Execution?
+        The clearTimeout()/clearInterval() method stops the execution of the function specified in setTimeout()/clearInterval().
+                
+        window.clearTimeout(timeoutVariable)
+            The window.clearTimeout()/window.clearInterval() method can be written without the window prefix.
+                
+            The clearTimeout()/clearInterval() method uses the variable returned from setTimeout()
+     -->
