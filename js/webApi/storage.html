@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem("token","fsdWQEQFERFR$rg3FEW#$T#WGR$AGR")
+        console.log(localStorage.getItem("token")) //Output -> fsdWQEQFERFR$rg3FEW#$T#WGR$AGR
+
+        sessionStorage.setItem("name","Yogesh Gaur")
+        console.log(sessionStorage.getItem("name")) //Output -> Yogesh Gaur
+    </script>
+</body>
+</html>
+
+<!-- 
+Web Storage API :
+    The Web Storage API is a simple syntax for storing and retrieving data in the browser. It is very easy to use
+
+    The localStorage Object : 
+        The localStorage object provides access to a local storage for a particular Web Site. It allows you to store, read, add, modify, and delete data items for that domain.
+
+        The data is stored with no expiration date, and will not be deleted when the browser is closed.
+
+        The data will be available for days, weeks, and years.
+    
+    The sessionStorage Object
+        The sessionStorage object is identical to the localStorage object.
+        
+        The difference is that the sessionStorage object stores data for one session.
+        
+        The data is deleted when the browser is closed.
+
+Storage Object Properties and Methods
+        Property/Method | Description
+        key(n) | Returns the name of the nth key in the storage
+        length | Returns the number of data items stored in the Storage object
+        getItem(keyName) | Returns the value of the specified key name
+        setItem(keyName, value) | Adds a key to the storage, or updates a key value (if it already exists)
+        removeItem(keyName) | Removes that key from the storage
+        clear() | Empty all key out of the storage
+    
+ -->
