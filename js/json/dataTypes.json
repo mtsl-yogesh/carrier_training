@@ -1,0 +1,21 @@
+{
+    "name":"Yogesh",
+    "age":20,
+    "salary":3243.32542,
+    "isFresher":true,
+    "bloodGroup":null,
+    "company":{
+        "name":"MTSL",
+        "location":"Noida"
+    },
+    "friends":[
+        {
+            "name":"Ramesh",
+            "company":"TCS"
+        },
+        {
+            "name":"Saurabh",
+            "company":"Microsoft"
+        }
+    ]
+}
