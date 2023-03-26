@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.background {
+            background: url('https://images.pexels.com/photos/1883385/pexels-photo-1883385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') repeat;
+            border: 2px solid black;
+        }
+
+        div.transbox {
+            margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="transbox">
+            <p>This is some text that is placed in the transparent box.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+CSS Opacity / Transparency :
+    The opacity property specifies the opacity/transparency of an element.
+
+    Transparent Hover Effect :
+        The opacity property is often used together with the :hover selector to change the opacity on mouse-over.
+
+    Transparent Box :
+        When using the opacity property to add transparency to the background of an element, all of its child elements inherit
+        the same transparency. This can make the text inside a fully transparent element hard to read.
+
+    Transparency using RGBA :
+        If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following
+        example sets the opacity for the background color and not the text.
