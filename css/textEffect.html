@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.test1 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        p.test2 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The text-overflow Property</h1>
+    <p>The following two paragraphs contains a long text that will not fit in the box.</p>
+
+    <h2>text-overflow: clip:</h2>
+    <p class="test1">This is some long text that will not fit in the box</p>
+
+    <h2>text-overflow: ellipsis:</h2>
+    <p class="test2">This is some long text that will not fit in the box</p>
+</body>
+
+</html>
+<!-- 
+CSS Text Overflow :
+The CSS text-overflow property specifies how overflowed content that is not displayed should be signaled to the user.
+
+CSS Word Wrapping :
+The CSS word-wrap property allows long words to be able to be broken and wrap onto the next line.
+
+If a word is too long to fit within an area, it expands outside.
+
+CSS Word Breaking :
+The CSS word-break property specifies line breaking rules.
+
+CSS Writing Mode
+The CSS writing-mode property specifies whether lines of text are laid out horizontally or vertically. -->

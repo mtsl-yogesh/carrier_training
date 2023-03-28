@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        @media screen and (min-width: 480px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Resize the browser window to see the effect!</h1>
+    <p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+</body>
+
+</html>
+<!-- 
+CSS2 Introduced Media Types
+    The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.
+
+    Examples: You could have one set of style rules for computer screens, one for printers, one for handheld devices, one for television-type devices, and so on.
+
+    Unfortunately these media types never got a lot of support by devices, other than the print media type.
+
+CSS3 Introduced Media Queries
+    Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.
+    
+    Media queries can be used to check many things, such as:
+    
+        1. width and height of the viewport
+        2. width and height of the device
+        3. orientation (is the tablet/phone in landscape or portrait mode?)
+        4. resolution
+        
+    Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones).
+
+CSS3 Media Types : 
+    Value | Description
+    all	Used | for all media type devices
+    print | Used for printers
+    screen | Used for computer screens, tablets, smart-phones etc.
+    speech | Used for screenreaders that "reads" the page out loud
+-->

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        #borderimg { 
+          border: 10px solid transparent;
+          padding: 15px;
+          border-image: url("https://www.w3schools.com/css/border.png") 30 round;
+        }
+        </style>
+</head>
+
+<body>
+    <h1>The border-image Property</h1>
+
+    <p>Here, the middle sections of the image are repeated to create the border:</p>
+    <p id="borderimg">border-image: url(border.png) 30 round;</p>
+
+    <p>Here is the original image:</p><img src="https://www.w3schools.com/css/border.png">
+    <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+</body>
+
+</html>
+<!-- 
+CSS border-image Property
+    The CSS border-image property allows you to specify an image to be used instead of the normal border around an element.
+
+    The property has three parts:
+
+        1. The image to use as the border
+        2. Where to slice the image
+        3. Define whether the middle sections should be repeated or stretched
+ -->

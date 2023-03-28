@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes example {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+            }
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Animation</h1>
+
+    <div></div>
+
+    <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+</body>
+
+</html>
+
+What are CSS Animations?
+An animation lets an element gradually change from one style to another.
+You can change as many CSS properties you want, as many times as you want.
+To use CSS animation, you must first specify some keyframes for the animation.
+Keyframes hold what styles the element will have at certain times.
+
+The @keyframes Rule
+When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to
+the new style at certain times.
+
+To get an animation to work, you must bind the animation to an element.
